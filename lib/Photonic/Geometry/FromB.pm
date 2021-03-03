@@ -37,9 +37,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 use namespace::autoclean;
 use Moo;
 use MooX::StrictConstructor;
+use Types::Standard qw(InstanceOf);
 
-has 'B' =>(is=>'ro', isa=>'PDL', required=>1,
-	   documentation=>'Charateristic function');
+has 'B' =>(is=>'ro', isa=>InstanceOf['PDL'], required=>1,
+	   documentation=>'Characteristic function');
 
 with 'Photonic::Roles::Geometry';
 

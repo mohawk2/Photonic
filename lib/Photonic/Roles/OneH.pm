@@ -138,6 +138,7 @@ use Moo::Role;
 use PDL::Lite;
 use Photonic::Types;
 use Moo::Util::TypeConstraints;
+use Types::Standard qw(Maybe InstanceOf);
 
 requires
     '_firstState', #default first state
@@ -146,13 +147,13 @@ requires
     'magnitude', #magnitude of a state
     'complexCoeffs', #Haydock coefficients are complex
     'changesign'; #change sign of $b2
-has 'firstState' =>(is=>'ro', isa=>'Photonic::Types::PDLComplex', lazy=>1,
+has 'firstState' =>(is=>'ro', isa=>PDLComplex, lazy=>1,
 		    builder=>'_firstState');
-has 'previousState' =>(is=>'ro', isa=>'Photonic::Types::PDLComplex', writer=>'_previousState',
+has 'previousState' =>(is=>'ro', isa=>PDLComplex, writer=>'_previousState',
     init_arg=>undef);
-has 'currentState' => (is=>'ro', isa=>'Photonic::Types::PDLComplex', writer=>'_currentState',
+has 'currentState' => (is=>'ro', isa=>PDLComplex, writer=>'_currentState',
       lazy=>1, init_arg=>undef,  default=>sub {PDL::r2C(0)});
-has 'nextState' =>(is=>'ro', isa=>maybe_type('Photonic::Types::PDLComplex'),
+has 'nextState' =>(is=>'ro', isa=>Maybe[PDLComplex],
 		   writer=>'_nextState',  lazy=>1,
 		   builder=>'_firstRState', init_arg=>undef);
 has 'current_a' => (is=>'ro', writer=>'_current_a',  init_arg=>undef);

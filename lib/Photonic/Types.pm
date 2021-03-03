@@ -36,7 +36,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 use Moo::Util::TypeConstraints;
 use Photonic::Utils qw(any_complex);
 
-subtype 'Photonic::Types::OddInt' =>
+subtype 'OddInt' =>
     as 'Int',
     where { $_ % 2 == 1 },
     message { "Number $_ must be odd" };

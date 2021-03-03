@@ -36,8 +36,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 
 use namespace::autoclean;
 use Carp;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 use Photonic::Types;
 
 has 'epsilon'=>(is=>'ro', isa=>'Photonic::Types::PDLComplex', required=>1,

@@ -95,8 +95,8 @@ The macroscopic wave operator of the last operation
 use namespace::autoclean;
 use Photonic::Utils qw(wave_operator);
 use Photonic::Types;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 extends 'Photonic::WE::R2::Green';
 

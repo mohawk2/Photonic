@@ -118,9 +118,9 @@ Array of Haydock b coefficients squared
 use namespace::autoclean;
 use PDL::Lite;
 use PDL::NiceSlice;
-use Moose;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use Moo;
+use MooX::StrictConstructor;
 
 extends 'Photonic::LE::S::OneH';
 with 'Photonic::Roles::AllH', 'Photonic::Roles::ReorthogonalizeC';

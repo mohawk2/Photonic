@@ -104,8 +104,8 @@ Number of dimensions of the system
 use namespace::autoclean;
 use PDL::Lite;
 use PDL::NiceSlice;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'nrf'=>(is=>'ro', isa=>'Photonic::LE::NR2::Field', required=>1,
          documentation=>'Haydock field calculator');

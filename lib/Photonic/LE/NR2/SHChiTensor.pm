@@ -169,7 +169,7 @@ use PDL::IO::Storable;
 use Photonic::Utils qw(make_haydock tensor);
 use Photonic::Types;
 use Photonic::LE::NR2::EpsTensor;
-use Moose;
+use Moo;
 
 has 'nh' =>(is=>'ro', isa=>'Num', required=>1,
 	    documentation=>'Desired no. of Haydock coefficients');

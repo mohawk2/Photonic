@@ -44,7 +44,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 =head1 SYNOPSIS
 
    package Photonic::MyPackage;
-   use Moose;
+   use Moo;
    with 'Photonic::Roles::EpsParams;
    has 'myfield' => (is=>'ro');
    ...
@@ -82,7 +82,7 @@ Spectral variable
 
 =cut
 
-use Moose::Role;
+use Moo::Role;
 use Photonic::Types;
 
 has 'nh' =>(is=>'ro', isa=>'Num', required=>1,
@@ -98,6 +98,6 @@ has 'epsB'=>(is=>'ro', isa=>'Photonic::Types::PDLComplex', init_arg=>undef, writ
 has 'u'=>(is=>'ro', isa=>'Photonic::Types::PDLComplex', init_arg=>undef, writer=>'_u',
     documentation=>'Spectral variable');
 
-no Moose::Role;
+no Moo::Role;
 
 1;

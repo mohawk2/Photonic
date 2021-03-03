@@ -100,8 +100,8 @@ The macroscopic dielectric projection of the last operation
 use namespace::autoclean;
 use PDL::Lite;
 use Photonic::Types;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 extends 'Photonic::WE::S::WaveP';
 

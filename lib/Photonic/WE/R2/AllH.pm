@@ -136,8 +136,8 @@ Array of Haydock g coefficients
 =cut
 
 use namespace::autoclean;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 extends 'Photonic::WE::R2::OneH';
 with 'Photonic::Roles::AllH', 'Photonic::Roles::ReorthogonalizeR';

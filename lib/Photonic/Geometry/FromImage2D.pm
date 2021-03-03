@@ -101,8 +101,8 @@ L<Photonic::Roles::Geometry>
 =cut
 
 use namespace::autoclean;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 BEGIN {
 # Put inoffensive path. Or else, PDL::IO::Pic fails in taint mode.

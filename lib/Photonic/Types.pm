@@ -33,8 +33,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 
 =cut
 
-
-use Moose::Util::TypeConstraints;
+use Moo::Util::TypeConstraints;
 use Photonic::Utils qw(any_complex);
 
 subtype 'Photonic::Types::OddInt' =>
@@ -71,7 +70,7 @@ subtype 'Photonic::Types::PDLComplex' =>
   where { any_complex($_) },
   ;
 
-no Moose::Util::TypeConstraints;
+no Moo::Util::TypeConstraints;
 
 __END__
 
@@ -87,7 +86,7 @@ version 0.008
 
    use Photonic::Types;
    package MyPackage;
-   use Moose;
+   use Moo;
    has 'n' => {is => 'ro', isa =>'Photonic::Types::OddInt'}
 
 =head1 DESCRIPTION

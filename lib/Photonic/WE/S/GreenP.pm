@@ -123,8 +123,8 @@ use Photonic::WE::S::AllH;
 use Photonic::Types;
 use Photonic::Utils qw(lentzCF);
 use List::Util qw(min);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'nh' =>(is=>'ro', isa=>'Num', required=>1,
 	    documentation=>'Desired no. of Haydock coefficients');

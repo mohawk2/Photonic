@@ -139,8 +139,8 @@ use Photonic::LE::S::AllH;
 use Photonic::Utils qw(cgtsv GtoR);
 use Photonic::Types;
 use Photonic::Iterator;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'nr'=>(is=>'ro', isa=>'Photonic::Types::AllHSave', required=>1,
            documentation=>'Haydock recursion calculator');

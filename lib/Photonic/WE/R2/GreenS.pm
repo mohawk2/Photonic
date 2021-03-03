@@ -140,8 +140,8 @@ use Photonic::WE::R2::GreenP;
 use Photonic::Types;
 use Photonic::Utils qw(tensor make_haydock make_greenp);
 use List::Util qw(all);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'metric'=>(is=>'ro', isa => 'Photonic::WE::R2::Metric',
        handles=>[qw(geometry B dims ndims r G GNorm L scale f)],required=>1);

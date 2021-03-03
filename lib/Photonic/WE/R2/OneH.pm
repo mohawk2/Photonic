@@ -38,8 +38,8 @@ use namespace::autoclean;
 use PDL::Lite;
 use PDL::NiceSlice;
 use Carp;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 use Photonic::Utils qw(MHProd any_complex GtoR RtoG);
 use Photonic::Types;
 

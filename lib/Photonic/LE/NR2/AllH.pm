@@ -108,8 +108,8 @@ Array of Haydock b coefficients squared
 =cut
 
 use namespace::autoclean;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 extends 'Photonic::LE::NR2::OneH';
 with 'Photonic::Roles::AllH', 'Photonic::Roles::ReorthogonalizeR';
 

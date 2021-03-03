@@ -163,8 +163,8 @@ use PDL::NiceSlice;
 use Carp;
 use Photonic::Types;
 use Photonic::Utils qw(SProd any_complex GtoR RtoG);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'geometry'=>(is=>'ro', isa => 'Photonic::Types::GeometryG0',
     handles=>[qw(B ndims dims r G GNorm L scale f pmGNorm)],required=>1

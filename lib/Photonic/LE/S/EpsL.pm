@@ -116,9 +116,9 @@ use Photonic::LE::S::AllH;
 use Photonic::Types;
 use Photonic::Utils qw(lentzCF);
 use List::Util qw(min);
-use Moose;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'nr' =>(is=>'ro', isa=>'Photonic::LE::S::AllH', required=>1);
 has 'epsL'=>(is=>'ro', isa=>'Photonic::Types::PDLComplex', init_arg=>undef, writer=>'_epsL');

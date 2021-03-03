@@ -127,8 +127,8 @@ use List::Util qw(all);
 use Photonic::LE::NP::AllH;
 use Photonic::LE::NP::EpsL;
 use Photonic::Types;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'epsilon'=>(is=>'ro', isa=>'Photonic::Types::PDLComplex', required=>1);
 has 'geometry'=>(is=>'ro', isa => 'Photonic::Types::Geometry',

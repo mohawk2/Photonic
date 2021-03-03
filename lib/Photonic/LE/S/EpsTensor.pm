@@ -127,8 +127,8 @@ use List::Util qw(all);
 use Photonic::LE::S::AllH;
 use Photonic::LE::S::EpsL;
 use Photonic::Types;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'geometry'=>(is=>'ro', isa => 'Photonic::Types::Geometry',
     handles=>[qw(B ndims dims r G GNorm L scale f)],required=>1

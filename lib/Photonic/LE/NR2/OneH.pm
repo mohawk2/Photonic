@@ -154,8 +154,8 @@ use PDL::Lite;
 use Carp;
 use Photonic::Types;
 use Photonic::Utils qw(HProd apply_longitudinal_projection);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'geometry'=>(is=>'ro', isa => 'Photonic::Types::GeometryG0',
     handles=>[qw(B dims ndims r G GNorm L scale f)],required=>1);

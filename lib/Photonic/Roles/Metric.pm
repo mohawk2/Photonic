@@ -98,7 +98,7 @@ The actual metric tensor as a complex PDL. Provided by implementation.
 
 use namespace::autoclean;
 use PDL::Lite;
-use Moose::Role;
+use Moo::Role;
 use Photonic::Types;
 
 has 'geometry'  => (is=>'ro', isa=>'Photonic::Types::Geometry', required=>1,
@@ -114,6 +114,6 @@ has 'wavevector'=> (is=>'ro', isa=>'PDL', required=>1,
                    documentation=>'Wave vector');
 requires qw(value); #provided by metric instances
 
-no Moose::Role;
+no Moo::Role;
 
 1;

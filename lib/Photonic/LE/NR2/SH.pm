@@ -198,8 +198,8 @@ use Photonic::Utils qw(RtoG GtoR HProd linearCombineIt any_complex cgtsv);
 use Photonic::Iterator;
 use Photonic::Types;
 use PDL::Constants qw(PI);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'shp'=>(is=>'ro', 'isa'=>'Photonic::LE::NR2::SHP', required=>1,
     handles=>[qw(ndims nrf densityA densityB density nr)],

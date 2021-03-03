@@ -100,8 +100,8 @@ use PDL::NiceSlice;
 use PDL::MatrixOps;
 use Photonic::Types;
 use Photonic::Utils qw(any_complex);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 extends 'Photonic::WE::S::Wave';
 

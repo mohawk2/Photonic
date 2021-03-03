@@ -176,8 +176,8 @@ use PDL::NiceSlice;
 use Carp;
 use Photonic::Types;
 use Photonic::Utils qw(VSProd any_complex GtoR RtoG);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'metric'=>(is=>'ro', isa => 'Photonic::WE::S::Metric',
 	       handles=>{B=>'B', ndims=>'ndims', dims=>'dims',

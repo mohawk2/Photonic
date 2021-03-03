@@ -88,8 +88,8 @@ use PDL::NiceSlice;
 use Carp;
 use Photonic::Types;
 use Photonic::Utils qw(any_complex);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 # Later make it complex
 has 'value'     => (is=>'ro', isa=>'PDL', init_arg=>undef, lazy=>1,

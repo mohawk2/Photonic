@@ -98,8 +98,8 @@ use namespace::autoclean;
 use PDL::Lite;
 use PDL::MatrixOps;
 use Photonic::Types;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 extends 'Photonic::WE::R2::Wave';
 

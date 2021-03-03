@@ -118,7 +118,7 @@ use Photonic::Iterator;
 use Machine::Epsilon;
 use PDL::Lite;
 use PDL::NiceSlice;
-use Moose::Role;
+use Moo::Role;
 
 has 'previous_W' =>(is=>'ro',
      writer=>'_previous_W', lazy=>1, init_arg=>undef,
@@ -233,6 +233,6 @@ sub _arg {
     my $arg=$s/$a;
 }
 
-no Moose::Role;
+no Moo::Role;
 
 1;

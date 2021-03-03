@@ -20,10 +20,9 @@ WriteMakefile(
 	'IO::File'                       => '0',
 	'List::Util'                     => '0',
 	'Machine::Epsilon'               => '0',
-	'Moose'                          => '0',
-	'Moose::Role'                    => '0',
-	'Moose::Util::TypeConstraints'   => '0',
-	'MooseX::StrictConstructor'      => '0',
+	'Moo'                            => '0',
+	'Moo::Util::TypeConstraints'     => '0',
+	'MooX::StrictConstructor'        => '0',
 	'PDL'                            => '2.049', # PDL::Complex->from_native
 	'PDL::Constants'                 => '0',
 	'PDL::Core'                      => '0',

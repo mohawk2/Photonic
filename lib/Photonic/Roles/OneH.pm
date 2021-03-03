@@ -58,7 +58,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
     package Photonic::LE::NR2::OneH.pm;
     $Photonic::LE::NR2::OneH::VERSION= '0.016';
     use namespace::autoclean;
-    use Moose;
+    use Moo;
     has...
     with 'Photonic::Roles::OneH';
 
@@ -133,11 +133,11 @@ next_b2, next_state, shifting the current values where necessary. Returns
 
 =cut
 
-use Moose::Role;
+use Moo::Role;
 
 use PDL::Lite;
 use Photonic::Types;
-use Moose::Util::TypeConstraints;
+use Moo::Util::TypeConstraints;
 
 requires
     '_firstState', #default first state
@@ -254,6 +254,6 @@ sub _coerce {
     return $val->re;
 }
 
-no Moose::Role;
+no Moo::Role;
 
 1;

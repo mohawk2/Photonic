@@ -139,8 +139,8 @@ use Photonic::WE::S::GreenP;
 use Photonic::Types;
 use Photonic::Utils qw(tensor make_haydock make_greenp);
 use List::Util qw(all);
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'nh' =>(is=>'ro', isa=>'Num', required=>1,
 	    documentation=>'Desired no. of Haydock coefficients');

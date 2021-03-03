@@ -54,7 +54,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
     package Photonic::LE::NR2::EpsL;
     $Photonic::LE::NR2::EpsL::VERSION= '0.016';
     use namespace::autoclean;
-    use Moose;
+    use Moo;
     with 'Photonic::Roles::EpsL';
     has...
 
@@ -136,7 +136,7 @@ check.
 
 =cut
 
-use Moose::Role;
+use Moo::Role;
 use Photonic::Types;
 
 has 'nr' =>(is=>'ro', isa=>'Photonic::Types::AllH', required=>1);
@@ -164,6 +164,6 @@ sub _nh { #build desired number of Haydock coeffs to use.
     return $self->nr->nh; #defaults to coefficients desired
 }
 
-no Moose::Role;
+no Moo::Role;
 
 1;

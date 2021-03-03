@@ -34,7 +34,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 =cut
 
 
-use Moose::Role;
+use Moo::Role;
 
 use PDL::Lite;
 use PDL::NiceSlice;
@@ -283,7 +283,7 @@ sub LC2Vec_G { #longitudinal vector field from its longitudinal
     $field->(*1)*$gnorm;
 }
 
-no Moose::Role;
+no Moo::Role;
 
 1;
 
@@ -310,7 +310,7 @@ version 0.016
     package Photonic::Geometry::FromB;
     $Photonic::Geometry::Geometry::VERSION = '0.016';
     use namespace::autoclean;
-    use Moose;
+    use Moo;
     has 'B' =>(is=>'ro', isa=>'PDL', required=>1,
 	       documentation=>'charateristic function');
     with 'Photonic::Roles::Geometry';

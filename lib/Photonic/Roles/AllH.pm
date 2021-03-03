@@ -56,7 +56,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
     package Photonic::LE::NR2::AllH;
     $Photonic::LE::NR2::AllH::VERSION= '0.016';
     use namespace::autoclean;
-    use Moose;
+    use Moo;
     has...
     with 'Photonic::Roles::OneH';
 
@@ -148,7 +148,7 @@ use IO::File;
 use Storable qw(store_fd fd_retrieve);
 use PDL::IO::Storable;
 use Carp;
-use Moose::Role;
+use Moo::Role;
 
 has nh=>(is=>'ro', required=>1,
          documentation=>'Maximum number of desired Haydock coefficients');
@@ -382,6 +382,6 @@ sub _pop { # undo the changes done after, in and before iteration, for
     $self->_iteration($self->iteration-1); #decrement counter
 }
 
-no Moose::Role;
+no Moo::Role;
 
 1;

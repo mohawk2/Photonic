@@ -86,8 +86,8 @@ use PDL::Lite;
 use PDL::MatrixOps;
 use PDL::NiceSlice;
 use Carp;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'value'     => (is=>'ro', isa=>'PDL', init_arg=>undef, lazy=>1,
                    builder=>'_value',

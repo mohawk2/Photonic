@@ -35,8 +35,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA  02110-1301 USA
 
 
 use namespace::autoclean;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 
 has 'B' =>(is=>'ro', isa=>'PDL', required=>1,
 	   documentation=>'Charateristic function');

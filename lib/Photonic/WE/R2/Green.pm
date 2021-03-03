@@ -140,8 +140,8 @@ use PDL::NiceSlice;
 use Photonic::WE::R2::AllH;
 use Photonic::WE::R2::GreenP;
 use Photonic::Types;
-use Moose;
-use MooseX::StrictConstructor;
+use Moo;
+use MooX::StrictConstructor;
 use Photonic::Utils qw(make_haydock);
 use List::Util qw(any);
 
